@@ -7,13 +7,9 @@ The model predicts the key experimental observation that, below a certain temper
 
 This code solves the Ising model for a 2D square lattice using the Metropolis algorithm, in the case of no applied external field. 
 
-<<<<<<< HEAD
+
 ##Implementation
 The entire program is implemented by the *IsingSystem* class. An object of this class is initialised with attributes that are parameters of the physical system (the size, temperature, exchange energy, and external field). The class contains functions to generate a random lattice (*generate_lattice*), and calculate the total energy (*energy*) and magnetisation (*magnetisation*) of a particular lattice configuration, all of which are also run in the initialisation function. Finally, the class contains a function that runs the Metropolis algorithm and returns a list of lattice configurations (along with the corresponding energy and magnetisation) for each sweep, as well as the mean and mean square energy and magnetisation (which would be the measured macro state values) over all the sweeps (*metropolis*). 
-=======
-## Implementation
-To implement the Metropolis algorithm, I created a class (*IsingSystem*), which can be found in *ising.py*. 
->>>>>>> 2ce63a83b7b4f51139ab0395af716fa17caa9e88
 
 ##Files
 *Ising.py* contains the *IsingSystem* class described above. It also contains a function to find the autocorrelation of the energy/magnetisation, *autocorrelation*, and decorrelation time, *decorr_time*.
